@@ -4,6 +4,8 @@
 
 -- Fr by Crypted
 
+-- Version: 1.4
+
 print("Credits to Crypted")
 print("Hello Rinbb👍")
 local Screenguini = Instance.new("ScreenGui")
@@ -19,6 +21,36 @@ local UsernameLabel = Instance.new("TextLabel")
 local TextLabel_5 = Instance.new("TextLabel")
 local UserIdLabel = Instance.new("TextLabel")
 local GamerPicture = Instance.new("ImageLabel")
+
+-- Add UICorner to main Frame
+local FrameCorner = Instance.new("UICorner")
+FrameCorner.CornerRadius = UDim.new(0, 8)
+FrameCorner.Parent = Frame
+
+-- Add UICorner to Title TextLabel
+local TitleCorner = Instance.new("UICorner")
+TitleCorner.CornerRadius = UDim.new(0, 5)
+TitleCorner.Parent = TextLabel
+
+-- Add UICorner to UsernameBox
+local UsernameCorner = Instance.new("UICorner")
+UsernameCorner.CornerRadius = UDim.new(0, 5)
+UsernameCorner.Parent = UsernameBox
+
+-- Add UICorner to PlaceIdBox
+local PlaceIdCorner = Instance.new("UICorner")
+PlaceIdCorner.CornerRadius = UDim.new(0, 5)
+PlaceIdCorner.Parent = PlaceIdBox
+
+-- Add UICorner to StartButton
+local ButtonCorner = Instance.new("UICorner")
+ButtonCorner.CornerRadius = UDim.new(0, 5)
+ButtonCorner.Parent = StartButton
+
+-- Make GamerPicture circular
+local ImageCorner = Instance.new("UICorner")
+ImageCorner.CornerRadius = UDim.new(0, 48)  -- 97x97 size / 2 = 48.5 radius
+ImageCorner.Parent = GamerPicture
 
 local HttpService = game:GetService("HttpService")
 local Players = game:GetService("Players")
